@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu styling</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      /* Navbar styling */
+      .navbar {
+        background: #4c6ca0;
+        border: 1px #ddd solid;
+        border-radius: 5px;
+        padding: 0;
+        margin: 0;
+        /* The below proprty is set when we are floating the li elements.
+        Otherwise background color won't be displayed */
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+      }
+      .navbar li a {
+        display: block;
+        color: #fff;
+        padding: 15px 20px;
+      }
+      .navbar li a:hover {
+        background-color: #446190;
+        color: #f4f4f4;
+      }
+
+      /* Side bar styling */
+      .side-item {
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        width: 200px;
+        padding: 20px;
+      }
+
+      .side-item a:hover {
+        color: coral;
+        cursor: pointer;
+      }
+      .side-item li {
+        margin-bottom: 10px;
+        border-bottom: 1px solid lightgray;
+      }
+      .side-item li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="side-item">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </body>
+</html>
